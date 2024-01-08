@@ -31,7 +31,7 @@ export default function App() {
     <div className="app-container">
       <Section title="Please leave feedback" className="temp">
         <FeedbackOptions
-          options={['good', 'neutral', 'bad']}
+          options={Object.keys(ratings)}
           onLeaveFeedback={handleRatingClick}
         />
       </Section>
